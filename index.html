@@ -22,12 +22,14 @@
   <!-- Header -->
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">North<span>trax</span></a>
+      <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="assets/logo.png" alt="Northtrax Logo" style="height: 60px; width: auto;">
+        <div style="display: inline-block;">North<span>trax</span></div>
+      </a>
       
       <nav class="nav-links">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#expertise">Our Expertise</a>
         <a href="#services">Services</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="faq.html">FAQ</a>
@@ -68,42 +70,164 @@
         <h2 class="section-title">Who We Are</h2>
         <p>At <strong>Northtrax</strong>, we understand that as a builder, your time is your most valuable asset. Not having an in-house drafter shouldn't slow down your projects or compromise your quality.</p>
         <p>We serve as your reliable extension, providing fast, accurate, and fully compliant residential drafting and design services. With a deep understanding of Australian building standards (NCC), we ensure your plans are construction-ready from day one.</p>
-        <a href="#expertise" class="btn btn-outline" style="margin-top: 1rem;">See Our Expertise</a>
+        <a href="#services" class="btn btn-outline" style="margin-top: 1rem;">See Our Services</a>
       </div>
     </div>
   </section>
 
-  <!-- Our Expertise Section -->
-  <section id="expertise" class="bg-light">
+  <!-- Services Detailed -->
+  <section id="services" class="bg-white">
     <div class="container">
-      <div class="text-center reveal">
-        <h2 class="section-title center">Our Expertise</h2>
-        <p style="margin-top: 1rem; color: var(--text-gray); font-size: 1.1rem; max-width: 700px; margin-inline: auto; margin-bottom: 3rem;">
-          Specialized solutions designed to keep your builds moving forward. Click on any area to learn more.
-        </p>
+      <div class="text-center reveal" style="margin-bottom: 4rem;">
+        <h2 class="section-title center">Detailed Services</h2>
       </div>
 
-      <div class="grid-4 reveal">
-        <a href="#srv-drafting" class="expertise-card">
-          <i class="fa-solid fa-pen-ruler expertise-icon"></i>
-          <h3>Drafting</h3>
-          <p style="color: var(--text-gray)">Precise, construction-ready working drawings.</p>
-        </a>
-        <a href="#srv-design" class="expertise-card">
-          <i class="fa-solid fa-house-chimney expertise-icon"></i>
-          <h3>Design</h3>
-          <p style="color: var(--text-gray)">Modern residential conceptualization.</p>
-        </a>
-        <a href="#srv-estimating" class="expertise-card">
-          <i class="fa-solid fa-calculator expertise-icon"></i>
-          <h3>Estimating</h3>
-          <p style="color: var(--text-gray)">Accurate cost forecasting and BOQ.</p>
-        </a>
-        <a href="#srv-da" class="expertise-card">
-          <i class="fa-solid fa-file-signature expertise-icon"></i>
-          <h3>DA Approvals</h3>
-          <p style="color: var(--text-gray)">Smooth council submission process.</p>
-        </a>
+      <div class="faq-container" style="max-width: 1000px;"> <!-- Increased max-width for services -->
+        
+        <!-- Service 1 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Residential drafting
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-drafting" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We produce high-quality, comprehensive working drawings that eliminate guesswork on site. Our drafting services are tailored specifically for builders who demand precision and clarity.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Floor plans & elevations</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Section details & construction notes</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Electrical & plumbing layouts</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> NCC compliant documentation</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_drafting_1781744736306.png" alt="Residential drafting">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 2 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Townhouse & Duplex Design
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-townhouse-duplex" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We design multi-dwelling homes built for narrow and high-value blocks — from single dwellings to attached terraces — balancing buildability, privacy, and street appeal.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Single, attached & terrace layouts</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Optimised floor plans for tight sites</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Privacy & solar access planning</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Council-ready design packages</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_townhouse_1781744755090.png" alt="Townhouse & Duplex Design">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 3 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Medium Density Development
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-medium-density" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We specialise in low-rise medium density projects — townhouses, dual occupancies, and villa developments — designed to meet NSW Low Rise Housing Diversity Code requirements.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Dual occupancy & multi-dwelling design</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Low Rise Housing Diversity Code compliance</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Yield & feasibility-driven planning</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> DA & CDC pathway documentation</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_medium_density_1781744768764.png" alt="Medium Density Development">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 4 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            3D Rendering & Visualisation
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-3d-rendering" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We bring designs to life with photorealistic 3D visuals before a single brick is laid — helping you sell faster and secure approvals with confidence.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Photorealistic exterior & interior renders</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Marketing-ready imagery for sales</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Design walkthroughs for clients</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Visuals to support approval submissions</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_3d_render_1781744783478.png" alt="3D Rendering & Visualisation">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 5 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Development Consulting & Estimating
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-consulting-estimating" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We help you understand what your site can deliver and what it will cost — combining planning advice with accurate cost estimates so you can invest with clarity.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Site feasibility & highest-use analysis</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> DA vs CDC pathway advice</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Detailed quantity take-offs</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Construction cost estimating</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_consulting_1781744797704.png" alt="Development Consulting & Estimating">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service 6 -->
+        <div class="accordion-item">
+          <div class="accordion-header">
+            Property Development
+            <i class="fa-solid fa-chevron-down"></i>
+          </div>
+          <div class="accordion-content">
+            <div id="srv-property-development" class="service-item" style="margin: 0;">
+              <div class="service-content">
+                <p>We support your project end-to-end — from raw land to a completed build — managing design, approvals, and delivery so you have a single trusted partner throughout.</p>
+                <ul class="service-list">
+                  <li><i class="fa-solid fa-arrow-right"></i> Land assessment & acquisition support</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Full design-to-approval management</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> Builder & consultant coordination</li>
+                  <li><i class="fa-solid fa-arrow-right"></i> End-to-end project delivery</li>
+                </ul>
+              </div>
+              <div class="service-img">
+                <img src="assets/srv_property_dev_1781744816630.png" alt="Property Development">
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
@@ -136,84 +260,6 @@
           </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <!-- Services Detailed -->
-  <section id="services" class="bg-white">
-    <div class="container">
-      <div class="text-center reveal" style="margin-bottom: 4rem;">
-        <h2 class="section-title center">Detailed Services</h2>
-      </div>
-
-      <!-- Drafting -->
-      <div id="srv-drafting" class="service-item reveal">
-        <div class="service-content">
-          <h3>Architectural Drafting</h3>
-          <p>We produce high-quality, comprehensive working drawings that eliminate guesswork on site. Our drafting services are tailored specifically for builders who demand precision and clarity.</p>
-          <ul class="service-list">
-            <li><i class="fa-solid fa-arrow-right"></i> Floor plans & elevations</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Section details & construction notes</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Electrical & plumbing layouts</li>
-            <li><i class="fa-solid fa-arrow-right"></i> NCC compliant documentation</li>
-          </ul>
-        </div>
-        <div class="service-img">
-          <img src="assets/about_blueprint_1779926500783.png" alt="Drafting Services">
-        </div>
-      </div>
-
-      <!-- Design -->
-      <div id="srv-design" class="service-item reveal">
-        <div class="service-content">
-          <h3>Residential Design</h3>
-          <p>From initial concept sketches to 3D visualizations, our design team helps bring your clients' visions to life while keeping structural integrity and buildability at the forefront.</p>
-          <ul class="service-list">
-            <li><i class="fa-solid fa-arrow-right"></i> Concept design & space planning</li>
-            <li><i class="fa-solid fa-arrow-right"></i> 3D Modeling & Rendering</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Material & finish selection consulting</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Custom home & duplex designs</li>
-          </ul>
-        </div>
-        <div class="service-img">
-          <img src="assets/portfolio_1_1779926516199.png" alt="Design Services">
-        </div>
-      </div>
-
-      <!-- Estimating -->
-      <div id="srv-estimating" class="service-item reveal">
-        <div class="service-content">
-          <h3>Construction Estimating</h3>
-          <p>Protect your margins with our accurate estimating services. We break down the costs meticulously so you can bid with confidence and manage your cash flow effectively.</p>
-          <ul class="service-list">
-            <li><i class="fa-solid fa-arrow-right"></i> Detailed Bill of Quantities (BOQ)</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Material & labor cost analysis</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Preliminary cost forecasting</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Tender preparation support</li>
-          </ul>
-        </div>
-        <div class="service-img">
-          <img src="assets/portfolio_2_1779926530004.png" alt="Estimating Services">
-        </div>
-      </div>
-
-      <!-- DA -->
-      <div id="srv-da" class="service-item reveal">
-        <div class="service-content">
-          <h3>DA / CC Approvals</h3>
-          <p>Navigating council requirements can be a headache. We handle the red tape, ensuring all Development Application (DA) and Construction Certificate (CC) requirements are met swiftly.</p>
-          <ul class="service-list">
-            <li><i class="fa-solid fa-arrow-right"></i> Council submission packages</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Statement of Environmental Effects (SEE)</li>
-            <li><i class="fa-solid fa-arrow-right"></i> Coordination with external consultants (Surveyors, Engineers)</li>
-            <li><i class="fa-solid fa-arrow-right"></i> CDC (Complying Development Certificate) applications</li>
-          </ul>
-        </div>
-        <div class="service-img">
-          <img src="assets/hero_bg_1779926482431.png" alt="DA Approvals">
-        </div>
-      </div>
-
     </div>
   </section>
 
