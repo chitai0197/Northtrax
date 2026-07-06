@@ -17,13 +17,25 @@
   <!-- Header -->
   <header>
     <div class="nav-container">
-      <a href="index.html" class="logo">North<span>trax</span></a>
+      <a href="index.html" class="logo" style="display: flex; align-items: center; gap: 15px;">
+        <img src="assets/logo.png" alt="Northtrax Logo" style="height: 60px; width: auto;">
+        <div style="display: inline-block;">North<span>trax</span></div>
+      </a>
       
       <nav class="nav-links">
         <a href="index.html">Home</a>
         <a href="index.html#about">About</a>
-        <a href="index.html#expertise">Our Expertise</a>
-        <a href="index.html#services">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 3px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="services.html#srv-drafting">Residential Drafting</a>
+            <a href="services.html#srv-townhouse-duplex">Townhouse & Duplex Design</a>
+            <a href="services.html#srv-medium-density">Medium Density Development</a>
+            <a href="services.html#srv-3d-rendering">3D Rendering & Visualisation</a>
+            <a href="services.html#srv-consulting-estimating">Consulting & Estimating</a>
+            <a href="services.html#srv-property-development">Property Development Support</a>
+          </div>
+        </div>
         <a href="portfolio.html" class="active">Portfolio</a>
         <a href="faq.html">FAQ</a>
         <a href="index.html#contact">Contact</a>
@@ -124,7 +136,7 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="index.html#about">About Us</a></li>
-            <li><a href="index.html#services">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>

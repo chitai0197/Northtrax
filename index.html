@@ -30,7 +30,17 @@
       <nav class="nav-links">
         <a href="#home" class="active">Home</a>
         <a href="#about">About</a>
-        <a href="#services">Services</a>
+        <div class="nav-dropdown">
+          <a href="services.html" class="dropdown-toggle">Services <i class="fa-solid fa-chevron-down" style="font-size: 0.8em; margin-left: 3px;"></i></a>
+          <div class="dropdown-menu">
+            <a href="services.html#srv-drafting">Residential Drafting</a>
+            <a href="services.html#srv-townhouse-duplex">Townhouse & Duplex Design</a>
+            <a href="services.html#srv-medium-density">Medium Density Development</a>
+            <a href="services.html#srv-3d-rendering">3D Rendering & Visualisation</a>
+            <a href="services.html#srv-consulting-estimating">Consulting & Estimating</a>
+            <a href="services.html#srv-property-development">Property Development Support</a>
+          </div>
+        </div>
         <a href="portfolio.html">Portfolio</a>
         <a href="faq.html">FAQ</a>
         <a href="#contact">Contact</a>
@@ -54,7 +64,7 @@
         <p>Reliable design, estimating, and DA approvals tailored to streamline your construction process. We are your dedicated drafting partner.</p>
         <div class="hero-btns">
           <a href="#contact" class="btn btn-primary">Get a Quote</a>
-          <a href="#services" class="btn btn-outline-light">Our Services</a>
+          <a href="services.html" class="btn btn-outline-light">Our Services</a>
         </div>
       </div>
     </div>
@@ -70,164 +80,7 @@
         <h2 class="section-title">Who We Are</h2>
         <p>At <strong>Northtrax</strong>, we understand that as a builder, your time is your most valuable asset. Not having an in-house drafter shouldn't slow down your projects or compromise your quality.</p>
         <p>We serve as your reliable extension, providing fast, accurate, and fully compliant residential drafting and design services. With a deep understanding of Australian building standards (NCC), we ensure your plans are construction-ready from day one.</p>
-        <a href="#services" class="btn btn-outline" style="margin-top: 1rem;">See Our Services</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Services Detailed -->
-  <section id="services" class="bg-white">
-    <div class="container">
-      <div class="text-center reveal" style="margin-bottom: 4rem;">
-        <h2 class="section-title center">Detailed Services</h2>
-      </div>
-
-      <div class="faq-container" style="max-width: 1000px;"> <!-- Increased max-width for services -->
-        
-        <!-- Service 1 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Residential drafting
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-drafting" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We produce high-quality, comprehensive working drawings that eliminate guesswork on site. Our drafting services are tailored specifically for builders who demand precision and clarity.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Floor plans & elevations</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Section details & construction notes</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Electrical & plumbing layouts</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> NCC compliant documentation</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_drafting_1781744736306.png" alt="Residential drafting">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 2 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Townhouse & Duplex Design
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-townhouse-duplex" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We design multi-dwelling homes built for narrow and high-value blocks — from single dwellings to attached terraces — balancing buildability, privacy, and street appeal.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Single, attached & terrace layouts</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Optimised floor plans for tight sites</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Privacy & solar access planning</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Council-ready design packages</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_townhouse_1781744755090.png" alt="Townhouse & Duplex Design">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 3 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Medium Density Development
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-medium-density" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We specialise in low-rise medium density projects — townhouses, dual occupancies, and villa developments — designed to meet NSW Low Rise Housing Diversity Code requirements.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Dual occupancy & multi-dwelling design</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Low Rise Housing Diversity Code compliance</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Yield & feasibility-driven planning</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> DA & CDC pathway documentation</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_medium_density_1781744768764.png" alt="Medium Density Development">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 4 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            3D Rendering & Visualisation
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-3d-rendering" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We bring designs to life with photorealistic 3D visuals before a single brick is laid — helping you sell faster and secure approvals with confidence.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Photorealistic exterior & interior renders</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Marketing-ready imagery for sales</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Design walkthroughs for clients</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Visuals to support approval submissions</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_3d_render_1781744783478.png" alt="3D Rendering & Visualisation">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 5 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Development Consulting & Estimating
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-consulting-estimating" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We help you understand what your site can deliver and what it will cost — combining planning advice with accurate cost estimates so you can invest with clarity.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Site feasibility & highest-use analysis</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> DA vs CDC pathway advice</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Detailed quantity take-offs</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Construction cost estimating</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_consulting_1781744797704.png" alt="Development Consulting & Estimating">
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Service 6 -->
-        <div class="accordion-item">
-          <div class="accordion-header">
-            Property Development
-            <i class="fa-solid fa-chevron-down"></i>
-          </div>
-          <div class="accordion-content">
-            <div id="srv-property-development" class="service-item" style="margin: 0;">
-              <div class="service-content">
-                <p>We support your project end-to-end — from raw land to a completed build — managing design, approvals, and delivery so you have a single trusted partner throughout.</p>
-                <ul class="service-list">
-                  <li><i class="fa-solid fa-arrow-right"></i> Land assessment & acquisition support</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Full design-to-approval management</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> Builder & consultant coordination</li>
-                  <li><i class="fa-solid fa-arrow-right"></i> End-to-end project delivery</li>
-                </ul>
-              </div>
-              <div class="service-img">
-                <img src="assets/srv_property_dev_1781744816630.png" alt="Property Development">
-              </div>
-            </div>
-          </div>
-        </div>
-
+        <a href="services.html" class="btn btn-outline" style="margin-top: 1rem;">See Our Services</a>
       </div>
     </div>
   </section>
@@ -263,39 +116,72 @@
     </div>
   </section>
 
-  <!-- Portfolio Preview -->
+  <!-- Portfolio Preview Slider -->
   <section class="bg-light">
     <div class="container">
-      <div class="text-center reveal">
-        <h2 class="section-title center">Recent Projects</h2>
-        <p style="margin-top: 1rem; color: var(--text-gray); font-size: 1.1rem;">A glimpse into our high-quality documentation and design outcomes.</p>
-      </div>
-
-      <div class="portfolio-grid reveal">
-        <div class="portfolio-item">
-          <img src="assets/portfolio_1_1779926516199.png" alt="Project 1">
-          <div class="portfolio-overlay">
-            <h3>Modern Suburbia</h3>
-            <p>Design & Drafting</p>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/hero_bg_1779926482431.png" alt="Project 2">
-          <div class="portfolio-overlay">
-            <h3>Coastal Retreat</h3>
-            <p>Drafting & DA</p>
-          </div>
-        </div>
-        <div class="portfolio-item">
-          <img src="assets/portfolio_2_1779926530004.png" alt="Project 3">
-          <div class="portfolio-overlay">
-            <h3>Urban Duplex</h3>
-            <p>Estimating</p>
-          </div>
+      <div class="text-center reveal" style="margin-bottom: 2.5rem;">
+        <h2 class="section-title">Recent Projects</h2>
+        <p style="color: var(--text-gray); font-size: 1.1rem; margin-top: 0.5rem; max-width: 600px; margin-left: auto; margin-right: auto;">A glimpse into our high-quality documentation and design outcomes.</p>
+        <div style="display: flex; gap: 12px; justify-content: center; margin-top: 1.5rem;">
+          <button id="projPrev" class="slider-arrow" aria-label="Previous Projects"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="projNext" class="slider-arrow" aria-label="Next Projects"><i class="fa-solid fa-arrow-right"></i></button>
         </div>
       </div>
 
-      <div class="view-all-wrapper reveal">
+      <div class="portfolio-slider-wrapper reveal">
+        <div class="portfolio-slider">
+          <!-- Project 1 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/portfolio_1_1779926516199.png" alt="Modern Suburbia">
+            <div class="portfolio-overlay">
+              <h3>Modern Suburbia</h3>
+              <p>Design & Drafting</p>
+            </div>
+          </div>
+          <!-- Project 2 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/hero_bg_1779926482431.png" alt="Coastal Retreat">
+            <div class="portfolio-overlay">
+              <h3>Coastal Retreat</h3>
+              <p>Drafting & DA Approvals</p>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/portfolio_2_1779926530004.png" alt="Urban Duplex">
+            <div class="portfolio-overlay">
+              <h3>Urban Duplex Construction</h3>
+              <p>Estimating & Consulting</p>
+            </div>
+          </div>
+          <!-- Project 4 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/srv_townhouse_1781744755090.png" alt="Luxury Townhouses">
+            <div class="portfolio-overlay">
+              <h3>Luxury Terrace Living</h3>
+              <p>Townhouse & Duplex Design</p>
+            </div>
+          </div>
+          <!-- Project 5 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/srv_3d_render_1781744783478.png" alt="Contemporary Villa 3D">
+            <div class="portfolio-overlay">
+              <h3>Contemporary Villa</h3>
+              <p>3D Rendering & Visualisation</p>
+            </div>
+          </div>
+          <!-- Project 6 -->
+          <div class="portfolio-item" onclick="window.location.href='portfolio.html'">
+            <img src="assets/srv_medium_density_1781744768764.png" alt="Medium Density Terraces">
+            <div class="portfolio-overlay">
+              <h3>Parkside Multi-Dwelling</h3>
+              <p>Medium Density Development</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="view-all-wrapper reveal" style="margin-top: 2rem;">
         <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
       </div>
     </div>
@@ -376,7 +262,7 @@
           <h4>Quick Links</h4>
           <ul>
             <li><a href="#about">About Us</a></li>
-            <li><a href="#services">Services</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="portfolio.html">Portfolio</a></li>
             <li><a href="faq.html">FAQ</a></li>
           </ul>
