@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   // Horizontal Project Slider Controls
-  const slider = document.querySelector('.portfolio-slider');
+  const slider = document.getElementById('projects-slider');
   const prevBtn = document.getElementById('projPrev');
   const nextBtn = document.getElementById('projNext');
 
