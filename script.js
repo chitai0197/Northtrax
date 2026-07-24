@@ -152,4 +152,71 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     }
   }
+
+  // Ribbon Slider Background logic
+  const ribbons = document.querySelectorAll('.ribbon-slider-section');
+  if (ribbons.length > 0) {
+    const images = [
+      'assets/portfolio_2_1779926530004.png',
+      'assets/portfolio_1_1779926516199.png',
+      'assets/hero_bg_1779926482431.png',
+      'assets/about_blueprint_1779926500783.png'
+    ];
+    let currentIndex = 0;
+    setInterval(() => {
+      currentIndex = (currentIndex + 1) % images.length;
+      ribbons.forEach(ribbon => {
+        ribbon.style.backgroundImage = `url('${images[currentIndex]}')`;
+      });
+    }, 4000); // Change image every 4 seconds
+  }
+
+  // Horizontal Services Slider Controls
+  const srvSlider = document.getElementById('services-slider');
+  const srvPrevBtn = document.getElementById('srvPrev');
+  const srvNextBtn = document.getElementById('srvNext');
+
+  if (srvSlider) {
+    let srvWheelCooldown = false;
+    srvSlider.addEventListener('wheel', (evt) => {
+      if (srvSlider.scrollWidth > srvSlider.clientWidth) {
+        const atLeftEnd = srvSlider.scrollLeft <= 0 && evt.deltaY < 0;
+        const atRightEnd = srvSlider.scrollLeft + srvSlider.clientWidth >= srvSlider.scrollWidth - 2 && evt.deltaY > 0;
+        
+        if (!atLeftEnd && !atRightEnd) {
+          evt.preventDefault();
+          
+          if (!srvWheelCooldown) {
+            srvWheelCooldown = true;
+            const firstCard = srvSlider.querySelector('.service-card');
+            const cardWidth = firstCard ? firstCard.offsetWidth + 32 : 400;
+            
+            if (evt.deltaY > 0) {
+              srvSlider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+            } else {
+              srvSlider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+            }
+            
+            setTimeout(() => {
+              srvWheelCooldown = false;
+            }, 450);
+          }
+        }
+      }
+    }, { passive: false });
+
+    if (srvPrevBtn && srvNextBtn) {
+      srvPrevBtn.addEventListener('click', () => {
+        const firstCard = srvSlider.querySelector('.service-card');
+        const cardWidth = firstCard ? firstCard.offsetWidth + 32 : 400;
+        srvSlider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      });
+
+      srvNextBtn.addEventListener('click', () => {
+        const firstCard = srvSlider.querySelector('.service-card');
+        const cardWidth = firstCard ? firstCard.offsetWidth + 32 : 400;
+        srvSlider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      });
+    }
+  }
 });

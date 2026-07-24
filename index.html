@@ -85,32 +85,103 @@
     </div>
   </section>
 
-  <!-- Revision for your life -->
-  <section class="revision-section" style="background-image: url('assets/portfolio_2_1779926530004.png'); background-size: cover; background-position: center; background-attachment: fixed;">
-    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,27,61,0.85); z-index: 1;"></div>
-    <div class="container revision-content">
-      <div class="revision-box reveal">
-        <h2>Revision For Your Life</h2>
-        <p style="font-size: 1.2rem; margin-top: 1rem; max-width: 600px;">
+  <!-- Revision for your life block -->
+  <section class="bg-light" style="padding: 4rem 0;">
+    <div class="container">
+      <div class="reveal" style="background: var(--bg-white, #fff); padding: 3rem; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05);">
+        <h2 style="color: var(--primary-navy); margin-bottom: 1rem;">Revision For Your Life</h2>
+        <p style="font-size: 1.15rem; color: var(--text-gray); margin-bottom: 2rem; max-width: 800px;">
           We know that plans change. Client requests shift. Site conditions dictate adjustments. Our "Revision For Your Life" philosophy means we don't just hand over a drawing and disappear. We stay with you, adapting and refining the plans as your project evolves in real life.
         </p>
-        <div class="revision-features">
-          <div class="revision-feature">
-            <i class="fa-solid fa-check-circle"></i>
-            <span>Flexible adjustments</span>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem;">
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-check-circle" style="color: var(--accent-orange); font-size: 1.5rem;"></i>
+            <span style="font-weight: 500;">Flexible adjustments</span>
           </div>
-          <div class="revision-feature">
-            <i class="fa-solid fa-stopwatch"></i>
-            <span>Fast turnaround times</span>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-stopwatch" style="color: var(--accent-orange); font-size: 1.5rem;"></i>
+            <span style="font-weight: 500;">Fast turnaround times</span>
           </div>
-          <div class="revision-feature">
-            <i class="fa-solid fa-comments"></i>
-            <span>Continuous communication</span>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-comments" style="color: var(--accent-orange); font-size: 1.5rem;"></i>
+            <span style="font-weight: 500;">Continuous communication</span>
           </div>
-          <div class="revision-feature">
-            <i class="fa-solid fa-shield-halved"></i>
-            <span>No hidden revision fees</span>
+          <div style="display: flex; align-items: center; gap: 0.75rem;">
+            <i class="fa-solid fa-shield-halved" style="color: var(--accent-orange); font-size: 1.5rem;"></i>
+            <span style="font-weight: 500;">No hidden revision fees</span>
           </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Ribbon Slider -->
+  <section class="ribbon-slider-section" id="ribbon-slider" style="position: relative; height: 350px; background-image: url('assets/portfolio_2_1779926530004.png'); background-size: cover; background-position: center; background-attachment: fixed; transition: background-image 1s ease-in-out;">
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,27,61,0.3); z-index: 1;"></div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="services-row-section" style="padding: 4rem 0; background: var(--bg-white, #fff);">
+    <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 2.5rem;">
+        <h2 class="section-title">Our Services</h2>
+        <div style="display: flex; gap: 12px; justify-content: center; margin-top: 1.5rem;">
+          <button id="srvPrev" class="slider-arrow" aria-label="Previous Services"><i class="fa-solid fa-arrow-left"></i></button>
+          <button id="srvNext" class="slider-arrow" aria-label="Next Services"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </div>
+      
+      <div class="portfolio-slider-wrapper reveal">
+        <div class="portfolio-slider" id="services-slider">
+          
+          <div class="service-card" onclick="window.location.href='services.html#srv-drafting'">
+            <img src="assets/srv_drafting_1781744736306.png" alt="Residential Drafting">
+            <div class="service-card-content">
+              <h3>Residential Drafting</h3>
+              <p>High-quality, comprehensive working drawings that eliminate guesswork on site.</p>
+            </div>
+          </div>
+
+          <div class="service-card" onclick="window.location.href='services.html#srv-townhouse-duplex'">
+            <img src="assets/srv_townhouse_1781744755090.png" alt="Townhouse & Duplex Design">
+            <div class="service-card-content">
+              <h3>Townhouse & Duplex Design</h3>
+              <p>Multi-dwelling homes built for narrow blocks balancing buildability and appeal.</p>
+            </div>
+          </div>
+
+          <div class="service-card" onclick="window.location.href='services.html#srv-medium-density'">
+            <img src="assets/srv_medium_density_1781744768764.png" alt="Medium Density Development">
+            <div class="service-card-content">
+              <h3>Medium Density Development</h3>
+              <p>Low-rise projects designed to meet NSW Low Rise Housing Diversity Code requirements.</p>
+            </div>
+          </div>
+
+          <div class="service-card" onclick="window.location.href='services.html#srv-3d-rendering'">
+            <img src="assets/srv_3d_render_1781744783478.png" alt="3D Rendering & Visualisation">
+            <div class="service-card-content">
+              <h3>3D Rendering & Visualisation</h3>
+              <p>Photorealistic 3D visuals that bring designs to life before a single brick is laid.</p>
+            </div>
+          </div>
+
+          <div class="service-card" onclick="window.location.href='services.html#srv-consulting-estimating'">
+            <img src="assets/srv_consulting_1781744797704.png" alt="Development Consulting & Estimating">
+            <div class="service-card-content">
+              <h3>Development Consulting</h3>
+              <p>Expert advice to understand what your site can deliver and what it will cost.</p>
+            </div>
+          </div>
+
+          <div class="service-card" onclick="window.location.href='services.html#srv-property-development'">
+            <img src="assets/srv_property_dev_1781744816630.png" alt="Property Development Support">
+            <div class="service-card-content">
+              <h3>Property Development</h3>
+              <p>End-to-end project support managing design, approvals, and delivery.</p>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -185,6 +256,11 @@
         <a href="portfolio.html" class="btn btn-primary">View All Projects</a>
       </div>
     </div>
+  </section>
+
+  <!-- Image Ribbon Slider 2 -->
+  <section class="ribbon-slider-section" id="ribbon-slider-2" style="position: relative; height: 350px; background-image: url('assets/portfolio_1_1779926516199.png'); background-size: cover; background-position: center; background-attachment: fixed; transition: background-image 1s ease-in-out;">
+    <div style="position: absolute; top:0; left:0; width:100%; height:100%; background: rgba(11,27,61,0.3); z-index: 1;"></div>
   </section>
 
   <!-- Contact -->
